@@ -1,29 +1,8 @@
-# MAKING SENSE:
-# - prok-euk transfer: "Was the gene present in the LECA?", "If there was a transfer, what was the direction?"
-# - euk-euk transfer: ("Was the gene present in the groups-last-common-ancestor?" or) "Was the gene present in the LECA?"
-
-# TO ADD:
-# - analyze sources of LGT
-# - also look for intereukaryotic LGT
-# - shouldn't the eukaryotic cutoff be more like >0.25? (say 0.3)
-# - euk-euk transfer follow the ancestors of eukaryotic nodes. If the taxfreq value goes above cutoff (0.6?) for non-query eukaryotic taxon before getting to the query -> euk-euk LGT
-
-
-# test
-# cd /home/vojta/vojta/test/lgt
-
-# python /home/vojta/vojta/myclasses/LGTanalysis2.py --tree_files test_bac_euk.aln.phb,test_euk_bac.aln.trim.phb --query_sequence_ids r103.Rhynchopus,XP_056778786.Penicillium_angulare --taxonomy_mappings test_bac_euk.faa.taxonomies.txt,test_euk_bac.faa.taxonomies.txt --taxonomy_of_selected_groups LGTanalysis.groups.tsv --gain_weight 1 --loss_weight 1 --intaxon eukaryota --support_cutoff 0.5 --orthology_cutoff 0.3
-
-# python /home/vojta/vojta/myclasses/LGTanalysis2.py --tree_files test_bac_euk.aln.phb --query_sequence_ids r103.Rhynchopus --taxonomy_of_selected_groups LGTanalysis.groups.tsv --gain_weight 1 --loss_weight 1 --intaxon euglenozoa --taxdump_dir /home/vojta/vojta/myclasses/taxdump --tax_id_mappings test_taxons_euk.txt --support_cutoff 0.5 --orthology_cutoff 0.3
-
-# python /home/vojta/vojta/myclasses/LGTanalysis2.py --tree_files test_bac_euk.aln.phb --query_sequence_ids r103.Rhynchopus --taxonomy_mappings test_bac_euk.faa.taxonomies.txt --taxonomy_of_selected_groups LGTanalysis.groups.tsv --gain_weight 1 --loss_weight 1 --intaxon eukaryota --support_cutoff 0.5 --orthology_cutoff 0.3
-
-
 
 def parseArguments():
     parser = argparse.ArgumentParser(prog=' LGTanalysis (https://github.com/vojtech-zarsky/vojta-tools)'\
                                      '\nPrerequisities:\n ete2 or ete3\n'\
-                                     '\nSyntax:\npython LGTanalysis.py --tree_files <file1>,<file2>,... --query_sequence_ids <id1>,<id2>,... --taxonomy_mappings <table1>,<table2>,... OR (--tax_id_mappings <table1>,<table2>,... --taxdump_dir <dir>) --taxonomy_of_selected_groups <table> --intaxon eukaryota\n'\
+                                     '\nSyntax:\npython LGTanalysis2.py --tree_files <file1>,<file2>,... --query_sequence_ids <id1>,<id2>,... --taxonomy_mappings <table1>,<table2>,... OR (--tax_id_mappings <table1>,<table2>,... --taxdump_dir <dir>) --taxonomy_of_selected_groups <table> --intaxon eukaryota\n'\
                                     )
     parser.add_argument('--tree_files', required=True, help='A single file name or a comma-separated list of tree files. (e.g. IQ-Tree *.treefile)')
     parser.add_argument('--query_sequence_ids', required=True, help='A single ID or a comma-separated list of IDs of the query sequence. (In the same order as the respective tree_files.)')
