@@ -1,15 +1,24 @@
 
+# python /home/vojta/vojta/myclasses/LGTanalysis2.py --tree_files test_bac_euk.aln.phb,test_euk_bac.aln.trim.phb --query_sequence_ids r103.Rhynchopus,XP_056778786.Penicillium_angulare --taxonomy_mappings test_bac_euk.faa.taxonomies.txt,test_euk_bac.faa.taxonomies.txt --taxonomy_of_selected_groups LGTanalysis.groups.tsv --gain_weight 1 --loss_weight 1 --intaxon eukaryota --support_cutoff 0.5 --orthology_cutoff 0.3
+
+# python /home/vojta/vojta/myclasses/LGTanalysis2.py --tree_files test_bac_euk.aln.phb --query_sequence_ids r103.Rhynchopus --taxonomy_of_selected_groups LGTanalysis.groups.tsv --gain_weight 1 --loss_weight 1 --intaxon euglenozoa --taxdump_dir /home/vojta/vojta/myclasses/taxdump --tax_id_mappings test_taxons_euk.txt --support_cutoff 0.5 --orthology_cutoff 0.3
+
+# python /home/vojta/vojta/myclasses/LGTanalysis2.py --tree_files test_bac_euk.aln.phb --query_sequence_ids r103.Rhynchopus --taxonomy_mappings test_bac_euk.faa.taxonomies.txt --taxonomy_of_selected_groups LGTanalysis.groups.tsv --gain_weight 1 --loss_weight 1 --intaxon eukaryota --support_cutoff 0.5 --orthology_cutoff 0.3
+
 def parseArguments():
-    parser = argparse.ArgumentParser(prog=' LGTanalysis (https://github.com/vojtech-zarsky/vojta-tools)'\
+    parser = argparse.ArgumentParser(prog=' LGTanalysis (https://github.com/vojtech-zarsky/lgt_analysis)'\
                                      '\nPrerequisities:\n ete2 or ete3\n'\
-                                     '\nSyntax:\npython LGTanalysis2.py --tree_files <file1>,<file2>,... --query_sequence_ids <id1>,<id2>,... --taxonomy_mappings <table1>,<table2>,... OR (--tax_id_mappings <table1>,<table2>,... --taxdump_dir <dir>) --taxonomy_of_selected_groups <table> --intaxon eukaryota\n'\
+                                     '\nSyntax:\npython LGTanalysis2.py --tree_files <file1>,<file2>,... '\
+                                     '--query_sequence_ids <id1>,<id2>,... '\
+                                     '--taxonomy_mappings <table1>,<table2>,... OR (--tax_id_mappings <table1>,<table2>,... --taxdump_dir <dir>) '\
+                                     '--taxonomy_of_selected_groups <table> --intaxon eukaryota\n'\
                                     )
     parser.add_argument('--tree_files', required=True, help='A single file name or a comma-separated list of tree files. (e.g. IQ-Tree *.treefile)')
     parser.add_argument('--query_sequence_ids', required=True, help='A single ID or a comma-separated list of IDs of the query sequence. (In the same order as the respective tree_files.)')
     parser.add_argument('--taxonomy_mappings', required=False, help='A table or a comma-separated list of tables of sequence IDs with their taxonomies. (e.g. A2FH21_TRIVA<tab>Eukaryota<tab>Metamonada<tab>Parabasalia<tab>Trichomonadida) (In the same order as the respective tree_files.)')
-    parser.add_argument('--tax_id_mappings', required=False, help='Alternatively a table or a comma-separated list of tables of sequence IDs with their NCBI taxids can be provided. (e.g. A2FH21_TRIVA<tab>5722) In that case the Taxonomy.py (https://github.com/vojtech-zarsky/vojta-tools) file is needed and the --taxdump_dir directory must be specified. You could also specify taxon name, however taxids are better. (In the same order as the respective tree_files.)')
+    parser.add_argument('--tax_id_mappings', required=False, help='Alternatively a table or a comma-separated list of tables of sequence IDs with their NCBI taxids can be provided. (e.g. A2FH21_TRIVA<tab>5722) In that case the Taxonomy.py (https://github.com/vojtech-zarsky/lgt_analysis) file is needed and the --taxdump_dir directory must be specified. You could also specify taxon name, however taxids are better. (In the same order as the respective tree_files.)')
     parser.add_argument('--taxdump_dir', required=False, help='Directory to the NCBI taxdump folder which can be downloaded here: https://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz')
-    parser.add_argument('--taxonomy_of_selected_groups', required=True, help='A tab-separated table of selected eukaryotic and prokaryotic groups with their taxonomy. (e.g. https://github.com/vojtech-zarsky/vojta-tools/blob/master/LGTanalysis.groups.tsv) An arrow indicates inclusion of the taxon on the left site to the group on the right. The domain-level taxon should be first.')
+    parser.add_argument('--taxonomy_of_selected_groups', required=True, help='A tab-separated table of selected eukaryotic and prokaryotic groups with their taxonomy. (e.g. https://github.com/vojtech-zarsky/lgt_analysis/blob/main/LGTanalysis.groups.tsv) An arrow indicates inclusion of the taxon on the left site to the group on the right. The domain-level taxon should be first.')
     parser.add_argument('--intaxon', required=False, help='Only consider LGTs from the outside of this taxon. Default: The domain-level taxon of the query (e.g. Euakryota).')
     parser.add_argument('--mask_viruses', action='store_true', help='This tag causes to ignore viral sequences when evaluating "out taxons".')
     parser.add_argument('--support_cutoff', type=float, required=False, help='Nodes with support bellow this will be removed (mind e.g. 0.85 vs 85 support). Default: 0.9/90')
