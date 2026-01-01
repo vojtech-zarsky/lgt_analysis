@@ -1,4 +1,9 @@
-This script was originally designed to analyze possible LGTs from prokaryotes to eukaryotes. This new version (v2) supports multi-file input and allows to analyze LGTs on different taxonomic levels through the optional --intaxon argument.
+This script was originally designed to analyze possible LGTs from prokaryotes to eukaryotes. This new version (v2) supports multi-file input and allows to analyze LGTs on different taxonomic levels through the optional --intaxon argument. The main outputs are:
+- "Directionality score" which aims (roughly) to estimate direction of the transfer
+- "Nonancestral score" which looks at the gene distribution among the taxonomic groups (within the "intaxon") and tries to estimate whether the gene was ancestrally present (in the "intaxon") or acquired later
+- Estimate the donor taxon
+
+Note, that when evaluating e.g. putative LGTs between eukaryotic lineages, the donor taxon and the set of "intaxon" orthologs is a more sensible indicator of possible LGT than the "Nonancestral score", which was originally devised for prokaryota -> eukaryota transfers. Also, the "--taxonomy_of_selected_groups" table can be much improved, especially when considering the within-domain LGTs.
 
 ```
 usage:  LGTanalysis (https://github.com/vojtech-zarsky/lgt_analysis)
