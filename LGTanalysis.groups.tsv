@@ -1,0 +1,99 @@
+cellular organisms	eukaryota	amorphea	amoebozoa	discosea						
+cellular organisms	eukaryota	amorphea	amoebozoa	evosea	archamoebae -> evosea					
+cellular organisms	eukaryota	amorphea	amoebozoa	evosea	eumycetozoa -> evosea					
+cellular organisms	eukaryota	amorphea	amoebozoa	evosea	variosea -> evosea					
+cellular organisms	eukaryota	amorphea	obazoa	apusozoa						
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	rotosphaerida				
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	fungi	opisthosporidia	microsporidia -> opisthosporidia		
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	fungi	opisthosporidia	cryptomycota -> opisthosporidia		
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	fungi	opisthosporidia	aphelidea -> opisthosporidia		
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	fungi	chytridiomycota_para+dikarya	chytridiomycota_para	blastocladiomycota -> chytridiomycota_para	
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	fungi	chytridiomycota_para+dikarya	chytridiomycota_para	chytridiomycota -> chytridiomycota_para	
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	fungi	chytridiomycota_para+dikarya	chytridiomycota_para	zoopagomycota -> chytridiomycota_para	
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	fungi	chytridiomycota_para+dikarya	chytridiomycota_para	glomeromycota -> chytridiomycota_para	
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	fungi	chytridiomycota_para+dikarya	chytridiomycota_para	mucoromycota -> chytridiomycota_para	
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	fungi	chytridiomycota_para+dikarya	dikarya		
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holomycota	fungi -> chytridiomycota_para				
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holozoa	ichthyosporea				
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holozoa	metazoa+choanoflagellata+filasterea	filasterea			
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holozoa	metazoa+choanoflagellata+filasterea	metazoa+choanoflagellata	choanoflagellata		
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holozoa	metazoa+choanoflagellata+filasterea	metazoa+choanoflagellata	metazoa	deuterostomia	
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holozoa	metazoa+choanoflagellata+filasterea	metazoa+choanoflagellata	metazoa	protostomia	
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holozoa	metazoa+choanoflagellata+filasterea	metazoa+choanoflagellata	metazoa	nonbilateralian_metazoa_para	porifera -> nonbilateralian_metazoa_para
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holozoa	metazoa+choanoflagellata+filasterea	metazoa+choanoflagellata	metazoa	nonbilateralian_metazoa_para	cnidaria -> nonbilateralian_metazoa_para
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holozoa	metazoa+choanoflagellata+filasterea	metazoa+choanoflagellata	metazoa	nonbilateralian_metazoa_para	ctenophora -> nonbilateralian_metazoa_para
+cellular organisms	eukaryota	amorphea	obazoa	opisthokonta	holozoa	metazoa+choanoflagellata+filasterea	metazoa+choanoflagellata	metazoa	nonbilateralian_metazoa_para	placozoa -> nonbilateralian_metazoa_para
+cellular organisms	eukaryota	diaphoretickes	archaeplastida	rhodophyta						
+cellular organisms	eukaryota	diaphoretickes	archaeplastida	viridiplantae	chlorophyta					
+cellular organisms	eukaryota	diaphoretickes	archaeplastida	viridiplantae	streptophyta					
+cellular organisms	eukaryota	diaphoretickes	cryptophyceae							
+cellular organisms	eukaryota	diaphoretickes	haptista							
+cellular organisms	eukaryota	diaphoretickes	sar	rhizaria						
+cellular organisms	eukaryota	diaphoretickes	sar	stramenopila+alveolata	alveolata	ciliophora				
+cellular organisms	eukaryota	diaphoretickes	sar	stramenopila+alveolata	alveolata	dino+perk+apico+chrom	apicomplexa+chrompodellids	apicomplexa -> apicomplexa+chrompodellids		
+cellular organisms	eukaryota	diaphoretickes	sar	stramenopila+alveolata	alveolata	dino+perk+apico+chrom	apicomplexa+chrompodellids	colpodellida -> apicomplexa+chrompodellids		
+cellular organisms	eukaryota	diaphoretickes	sar	stramenopila+alveolata	alveolata	dino+perk+apico+chrom	dinoflagellata+perkinsozoa	dinophyceae -> dinoflagellata+perkinsozoa		
+cellular organisms	eukaryota	diaphoretickes	sar	stramenopila+alveolata	alveolata	dino+perk+apico+chrom	dinoflagellata+perkinsozoa	perkinsozoa -> dinoflagellata+perkinsozoa		
+cellular organisms	eukaryota	diaphoretickes	sar	stramenopila+alveolata	stramenopiles	bigyra				
+cellular organisms	eukaryota	diaphoretickes	sar	stramenopila+alveolata	stramenopiles	gyrista	ochrophyta			
+cellular organisms	eukaryota	diaphoretickes	sar	stramenopila+alveolata	stramenopiles	gyrista	oomycota			
+cellular organisms	eukaryota	discoba	heterolobosea+euglenozoa	euglenozoa						
+cellular organisms	eukaryota	discoba	heterolobosea+euglenozoa	heterolobosea						
+cellular organisms	eukaryota	discoba	jakobida							
+cellular organisms	eukaryota	metamonada	parabasalia+fornicata	fornicata						
+cellular organisms	eukaryota	metamonada	parabasalia+fornicata	parabasalia						
+cellular organisms	eukaryota	metamonada	preaxostyla							
+cellular organisms	archaea	asgard group								
+cellular organisms	archaea	candidatus thermoplasmatota								
+cellular organisms	archaea	dpann group								
+cellular organisms	archaea	euryarchaeota								
+cellular organisms	archaea	tack group	thaumarchaeota							
+cellular organisms	archaea	tack group	crenarchaeota							
+cellular organisms	archaea	tack group	candidatus korarchaeota							
+cellular organisms	archaea	tack group	candidatus bathyarchaeota							
+cellular organisms	bacteria	acidobacteria								
+cellular organisms	bacteria	aquificae								
+cellular organisms	bacteria	caldiserica/cryosericota group								
+cellular organisms	bacteria	calditrichaeota								
+cellular organisms	bacteria	chrysiogenetes								
+cellular organisms	bacteria	coprothermobacterota								
+cellular organisms	bacteria	deferribacteres								
+cellular organisms	bacteria	dictyoglomi								
+cellular organisms	bacteria	elusimicrobia								
+cellular organisms	bacteria	fcb group	bacteroidetes/chlorobi group							
+cellular organisms	bacteria	fcb group	gemmatimonadetes							
+cellular organisms	bacteria	fcb group	candidatus marinimicrobia							
+cellular organisms	bacteria	fcb group	candidatus kryptonia							
+cellular organisms	bacteria	fcb group	fibrobacteres							
+cellular organisms	bacteria	fcb group	candidatus cloacimonetes							
+cellular organisms	bacteria	fcb group	candidate division zixibacteria							
+cellular organisms	bacteria	fusobacteria								
+cellular organisms	bacteria	nitrospinae/tectomicrobia group								
+cellular organisms	bacteria	nitrospirae								
+cellular organisms	bacteria	proteobacteria	delta/epsilon subdivisions							
+cellular organisms	bacteria	proteobacteria	betaproteobacteria							
+cellular organisms	bacteria	proteobacteria	oligoflexia							
+cellular organisms	bacteria	proteobacteria	alphaproteobacteria							
+cellular organisms	bacteria	proteobacteria	gammaproteobacteria							
+cellular organisms	bacteria	proteobacteria	zetaproteobacteria							
+cellular organisms	bacteria	proteobacteria	acidithiobacillia							
+cellular organisms	bacteria	proteobacteria	hydrogenophilalia							
+cellular organisms	bacteria	pvc group	chlamydiae							
+cellular organisms	bacteria	pvc group	planctomycetes							
+cellular organisms	bacteria	pvc group	verrucomicrobia							
+cellular organisms	bacteria	pvc group	kiritimatiellaeota							
+cellular organisms	bacteria	pvc group	lentisphaerae							
+cellular organisms	bacteria	pvc group	candidatus omnitrophica							
+cellular organisms	bacteria	spirochaetes								
+cellular organisms	bacteria	synergistetes								
+cellular organisms	bacteria	terrabacteria group	cyanobacteria/melainabacteria group							
+cellular organisms	bacteria	terrabacteria group	actinobacteria							
+cellular organisms	bacteria	terrabacteria group	firmicutes							
+cellular organisms	bacteria	terrabacteria group	deinococcus-thermus							
+cellular organisms	bacteria	terrabacteria group	chloroflexi							
+cellular organisms	bacteria	terrabacteria group	armatimonadetes							
+cellular organisms	bacteria	terrabacteria group	tenericutes							
+cellular organisms	bacteria	terrabacteria group	abditibacteriota							
+cellular organisms	bacteria	thermodesulfobacteria								
+cellular organisms	bacteria	thermotogae								
+viruses										
